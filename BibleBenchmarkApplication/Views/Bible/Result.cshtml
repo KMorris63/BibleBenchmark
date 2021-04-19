@@ -1,0 +1,19 @@
+﻿@model BibleBenchmarkApplication.Models.VerseDetails
+
+@{
+    ViewData["Title"] = "Results";
+}
+
+<h1>Search Result</h1>
+
+<div>
+    <div class="card">
+        <div class="card-header">
+            Verse Found
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">@Html.DisplayFor(model => model.BookName) @Html.DisplayFor(model => model.ChapterNum):@Html.DisplayFor(model => model.VerseNum)</h5>
+            <p class="card-text">@Html.DisplayFor(model => model.VerseText)</p>
+        </div>
+    </div>
+</div>
